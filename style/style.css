@@ -293,6 +293,12 @@ body {
     left: 0;
 }
 
+@media screen {
+    div.modile {display: none}
+    div.desktop {display: block}
+}
+
+
 .collapsible {
     background-color: #777;
     color: white;
