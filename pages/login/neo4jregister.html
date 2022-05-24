@@ -1,0 +1,54 @@
+{{define "neo4jregister"}}
+    {{ template "neo4jheader" . }}
+    <div class="logo">
+        <div class="image">Conn - ect - ions</div>
+        <hr>
+        <p></p>          
+        <div style="margin: 10px 0px 10px 0px;">
+            <div style="background-color: white; margin-top: 20px; border: none 1px black; width: 60%; ">
+                <p style="padding: 5px; font-family:Fixed,monospace">
+
+                    <form class="loginfrm" id="register" action="neo4jregisteruser" method="POST">
+                        
+                        <div class="neo4jlogin">Name</div>
+                        <div class="neo4jlogin">
+                            <input id="name" placeholder="Enter your name" name="name">
+                        </div>
+                        <div class="neo4jlogin">email address</div>
+                        <div class="neo4jlogin">
+                            <input id="email" type="email" placeholder="Enter your email address" name="email">
+                        </div>
+                        <div class="neo4jpassword">Password</div>
+                        <div class="neo4jpassword">
+                            <input id="password1" type="password" placeholder="Enter your password" name="password1">
+                        </div>                                           
+                        <div class="neo4jpassword">Password</div>
+                        <div class="neo4jpassword">
+                            <input id="password2" type="password" placeholder="Re-Enter your password" name="password2">
+                        </div>                                           
+
+                        <div class="neo4jloginbtn">
+                            <input type="submit" value="Register"></input>
+                        </div>
+                               
+                    </form>
+            </div>          
+        </div>
+        <div>
+            <div style="float:left; padding-left: 40%; background-color: white; margin-top: 10px; border: none 1px black; width: 100%; ">
+                <p style="padding: 5px; font-family:Fixed,monospace; border: solid 1px block;"></p>
+                    
+                <div style="float: left; color: red;">
+                    <div>{{.Status}}</div> 
+                </div>
+            
+            </div>          
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
+    
+{{end}}

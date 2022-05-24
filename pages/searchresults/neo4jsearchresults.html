@@ -1,0 +1,64 @@
+{{define "neo4jsearchresults"}}
+    {{ template "neo4jheader" . }}
+      <form action="neo4jtableresults" method="POST">
+          <div>
+            {{if eq .Debug true }} 
+              <div class="selected-store">
+                <label for="neo4jdb">Selected Neo4j store: </label>
+                <input style="border:none" id="neo4jdb" name="neo4jdb" value="{{.Neo4jDB}}" readonly>
+              </div>
+              <div class="visible">
+                <input style="border:none" id="server" name="server" value="{{.Server}}" readonly>
+              </div>
+              <div class="visible">
+                <input style="border:none" id="match" name="matchQuery" value="{{.Neo4jQuery}}" readonly>
+              </div>
+              <div class="visible">
+                <input style="border:none" id="matchLayer" name="matchLayer" value="{{.Layer}}" readonly> 
+              </div>
+              <div class="visible" >
+                <input  style="border:none" id="matchIncludeNodes" name="matchIncludeNodes" value="{{.IncludeNodes}}" readonly>
+              </div>
+              <div class="visible">
+                <input style="border:none" id="matchIncludeApplications" name="matchIncludeApplications" value="{{.IncludeApplications}}" readonly>
+              </div>
+            {{else}}
+              <div class="selected-store">
+                <label for="neo4jdb">Selected Neo4j store: </label>
+                <input id="neo4jdb" name="neo4jdb" value="{{.Neo4jDB}}" readonly>
+              </div>
+              <div class="hidden">
+                <input style="border:none" id="server" name="server" value="{{.Server}}" readonly>
+              </div>
+              <div class="hidden">
+                <input style="border:none" id="match" name="matchQuery" value="{{.Neo4jQuery}}" readonly>
+              </div>
+              <div class="hidden">
+                <input style="border:none" id="matchLayer" name="matchLayer" value="{{.Layer}}" readonly>
+              </div>
+              <div class="hidden" >
+                <input style="border:none" id="matchIncludeNodes" name="matchIncludeNodes" value="{{.IncludeNodes}}" readonly>
+              </div>
+              <div class="hidden">
+                <input style="border:none" id="matchIncludeApplications" name="matchIncludeApplications" value="{{.IncludeApplications}}" readonly>
+              </div>
+            {{end}}
+          </div>
+          <div class="loader" id="loaderanim"></div>
+          <div id="panel" style="background-color: white; float:left; border: none 0px black; width: 100%; height:800px; visibility: hidden;">
+
+            <div style="float: right; background-color: white;  border: none 0px black; width: 5%; height: 800px; ">
+              <ul style="margin-top: 10px;"> 
+                <a class="link-button">
+                  <input type="image" alt="Submit" src="./ca6f5616b5344abb8e1b8b097545c7b5/images/table.png" width="50" height="50" ></input>
+                </a>
+              </ul> 
+            </div>
+
+            <div id="myDiagramDiv" style="background-color: white; border: none 0px black; width: 95%; height: 800px; "></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+{{end}}

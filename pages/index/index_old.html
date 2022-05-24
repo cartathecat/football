@@ -1,0 +1,14 @@
+{{define "main"}}
+    {{ template "header" }}
+                <div>
+                    <div class="logo">
+                        <div class="image">IBM MQ Help</div>
+                        <form action="searchresults" method="POST">
+                            <div class="mqsearch">
+                                <input title="search" placeholder="Search ..." type="search" name="q"  >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    {{ template "trailer" }}
+{{end}}

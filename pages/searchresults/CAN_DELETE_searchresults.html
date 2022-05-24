@@ -1,0 +1,25 @@
+{{define "searchresults"}}
+    {{ template "header" }}
+           <div class="returnedresults">
+                <div>{{ .SearchTime}}</div>
+                <div class="itemcontainer">
+                    <div class="internalitem">
+                        <p>Status : {{.Status}}</p>
+                        <p>Count  : {{.TotalResults}}</p>
+                    </div>
+                </div>
+
+                {{range .MQArticles}}
+                    <div class="itemcontainer">
+                        <div class="internalitem">
+                            <p class="link" >
+                                <a href="http://localhost:8085/{{.Link}}">http://localhost:8085/{{.Link}}</a>
+                            </p>
+                            <p class="action"><span><a href="http://localhost:8085/{{.Link}}">{{.Action}}</a></span></p>
+                            <p class="content">{{.Content}}</p>
+                        </div>
+                    </div>
+                {{end}}
+            </div>
+    {{ template "trailer.html" }}
+{{end}}

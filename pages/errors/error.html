@@ -1,0 +1,12 @@
+{{define "error"}}
+    {{ template "header" }}
+                <div>
+                    <div class="logo">
+                        <div class="image">{{.HTTPStatusCode}} - {{.HTTPStatus}}</div>
+                        <div class="image">Code: {{.Code}}</div>
+                        <div class="image">Function: {{.Info}}</div>
+                        <div class="image">Message: {{.Msg}}</div>
+                    </div>
+                </div>
+    {{ template "trailer" }}
+{{end}}

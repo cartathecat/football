@@ -1,0 +1,75 @@
+{{define "neo4jtableresults"}}
+    {{ template "neo4jheader" . }}
+      <form action="neo4jsearchresults" method="POST"> 
+        <div> 
+          {{if eq .Debug true }} 
+              <div class="visible">
+                <input id="neo4jdb" name="neo4jdb" value="{{.Neo4jDB}}">
+              </div>
+              <div class="visible">
+                <input id="server" name="server" value="{{.Server}}">
+              </div>
+              <div class="visible">
+                <input id="match" name="matchQuery" value="{{.Neo4jQuery}}">
+              </div>
+              <div class="visible">
+                <input id="matchLayer" name="matchLayer" value="{{.Layer}}">
+              </div>
+              <div class="visible">
+                <input id="matchIncludeNodes" name="matchIncludeNodes" value="{{.IncludeNodes}}">
+              </div>
+              <div class="visible">
+                <input id="matchIncludeApplications" name="matchIncludeApplications" value="{{.IncludeApplications}}">
+              </div>
+            {{else}}
+              <div class="hidden">
+                <input id="neo4jdb" name="neo4jdb" value="{{.Neo4jDB}}">
+              </div>
+              <div class="hidden">
+                <input id="server" name="server" value="{{.Server}}">
+              </div>
+              <div class="hidden">
+                <input id="match" name="matchQuery" value="{{.Neo4jQuery}}">
+              </div>
+              <div class="hidden">
+                <input id="matchLayer" name="matchLayer" value="{{.Layer}}">
+              </div>
+              <div class="hidden">
+                <input id="matchIncludeNodes" name="matchIncludeNodes" value="{{.IncludeNodes}}">
+              </div>
+              <div class="hidden">
+                <input id="matchIncludeApplications" name="matchIncludeApplications" value="{{.IncludeApplications}}">
+              </div>
+              {{end}}
+        </div>
+
+        <div class="loader" id="loaderanim"></div>
+        <div id="panel" style="background-color: white; float:left; border: none 1px black; width: 100%; height: auto; visibility: hidden;">
+            <div style="float: right; background-color: white;  border: none 1px black; width: 5%;">
+              <ul style="margin-top: 10px;"> 
+                <a class="link-button">
+                  <input type="image" alt="Submit" src="./ca6f5616b5344abb8e1b8b097545c7b5/images/graph.png" width="50" height="50" ></input>
+                  </a>
+              </ul> 
+            </div>
+            <div id="navigation" class="navigationButtons" >
+              <div style="float:left;" ><button id="bntFirst" type="button" onclick="firstPage()" >First</button></div>
+              <div style="float:left;"><button id="bntNext" type="button" onclick="nextPage()" >Next</button></div>
+              <div style="float:left;"><button id="bntPrev" type="button" onclick="previousPage()" >Previous</button></div>
+              <div style="float:left;"><button id="bntLast" type="button" onclick="lastPage()" >Last</button></div>
+            </div>
+            <div id="page" class="page">
+            </div>
+
+            <div id="myTable" class="myTable"></div>
+              
+
+            </div> <!-- End of myTable -->
+
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
+{{end}}

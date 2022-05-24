@@ -1,0 +1,87 @@
+{{define "about"}}
+    {{ template "header" . }}
+                <div class="logo">
+                    <div class="image">Conn - ect - ions</div>
+                    <hr>
+                    <p></p>          
+                    <div style="margin: 10px 0px 10px 0px;">
+                        <div style="background-color: white; float:right; border: none 1px black; width: 40%; ">
+                            <div style="background-color: white; border: none 1px black; width: 100%; ">
+                                <img src="./ca6f5616b5344abb8e1b8b097545c7b5/images/fullrepos_node.PNG" style="margin: 10 0 0 10px; ">
+                                <div style="background-color: white; float: right; margin: 30 100 0 0 ">
+                                    <a>Full repository queue manager</a>
+                                </div>
+                            </div>          
+                            <div style="background-color: white;  border: none 1px black; width: 100%; ">
+                                <img src="./ca6f5616b5344abb8e1b8b097545c7b5/images/partial_node.PNG" style="margin: 10 0 0 18px;">
+                                <div style="background-color: white; float:right; margin: 30 80 0 0">
+                                    <a>Partial repository queue manager</a>
+                                </div>
+
+                            </div>          
+                            <div style="background-color: white;  border: none 1px black; width: 100%; ">
+                                <img src="./ca6f5616b5344abb8e1b8b097545c7b5/images/multiinstance_node.PNG" style="margin: 10 0 0 18px;" >
+                                <div style="background-color: white; float:right; margin: 30 100 0 0">
+                                    <a>Multi instance queue manager</a>
+                                </div>
+
+                            </div>          
+
+                        </div>
+                        <div style="background-color: white; margin-top: 20px; border: none 1px black; width: 60%; ">
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                <b>Conn-ect-ions</b> builds a topology of <b>objects</b> that connect together.
+                            </p>
+                            <span></span>
+                            <p style="padding: 25px 5px 5px 5px; font-family:Fixed,monospace">
+                                <b>Conn-ect-ions</b> web-server written in Go.
+                            </p>
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                <b>Neo4j</b> graph database (community edition), used to hold IBM MQ data and relationships.
+                            </p>
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                <b>Redis</b> in-memory data store, used to store additional data.
+                            </p>
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                The <b>web-server</b>, <b>Neo4j</b> and <b>Redis</b> all run in docker containers.
+                            </p>
+                        </div>  
+                        <div style="background-color: white; margin-top: 20px; border: none 1px black; width: 60%; ">
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                <b>Queue Manager</b> Enter the name of a queue manager to search for.  This will automatically update the 'Match query' property.
+                            </p>
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                <b>Match Query</b> This will be update automatically, but can be overriden with cypher statements.
+                            </p>
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                <b>Number of recursive searches</b> Include any additional nodes that are found, where the Neo4j relationship matches.
+                            </p>
+                            <p style="padding: 5px; font-family:Fixed,monospace">
+                                <b>Skip nodes</b> Skip the first 'x' number of nodes that Neo4j returns.
+                            </p>
+
+                            
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div style="text-align: center; background-color: white; margin-top: 10px; border: none 1px black; width: 100%; ">
+                            <p style="padding: 5px; font-family:Fixed,monospace; border: solid 1px block;"></p>
+                            
+                            <div style="margin: 50 0 0 0 ">
+                                <hr>
+                                <a href="https://golang.org/"><img src="./ca6f5616b5344abb8e1b8b097545c7b5/images/go_logo.png"  style="border: none 1px black; margin-left: 1%; width: 10%; height: 15%;"></a>
+                                <a href="https://www.ibm.com/docs/en/ibm-mq"><img src="./ca6f5616b5344abb8e1b8b097545c7b5/images/ibm_logo.png" style="border: none 1px black; margin-left: 5%; width: 10%; height: 16%;"></a>
+                                <a href="https://docker.com/"><img src="./ca6f5616b5344abb8e1b8b097545c7b5/images/docker_logo.png" style="border: none 1px black; margin-left: 5%; width: 10%; height: 23%;"></a>
+                                <a href="https://redis.io/"><img src="./ca6f5616b5344abb8e1b8b097545c7b5/images/redis_logo.png" style="border: none 1px black; margin-left: 5%; width: 10%; height: 21%;"></a>
+
+                            </div>
+
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
+    
+{{end}}

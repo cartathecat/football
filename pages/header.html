@@ -1,0 +1,44 @@
+{{define "header"}}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Neo4j connections</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=description content="Author: Mick M, Neo4j search results">
+        <link rel="stylesheet" type="text/css" href="/style/style.css"></link>
+        <!--
+        <link rel="icon" href="./pages/style/images/Connections.png">
+        <script type="text/javascript" src="./ca6f5616b5344abb8e1b8b097545c7b5/GoJS-master/release/go-debug.js"></script>
+        <script id="code" type="text/javascript" src="./ca6f5616b5344abb8e1b8b097545c7b5/neo4jqmgrmapping.js"></script>
+        -->
+        <!--
+            http://localhost:8999/
+        
+        onload="init()"
+        -->
+    </head>
+    <body >
+        <div class="index-container">
+            <div class="header">
+                <div>
+                    <!-- v2.0.4(beta)  <h1>Conn - ect - ions</h1> -->
+                   <!--  <div><img src="./pages/images/Connections.png" width="6%" height="50%"></div> -->
+                    <div class="version">{{ .Version}}</div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </div>         
+                <div class="user">
+                    {{if .Username}}
+                        <span>{{.Username}}</span>
+                        <span><a href="./neo4jlogoff">Logout</a></span>
+
+                    {{end}}
+                </div>         
+                
+            </div>
+
+{{end}}

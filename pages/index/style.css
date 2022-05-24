@@ -1,0 +1,459 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: sans-serif;
+
+}
+
+.index-container {
+    height: auto;
+
+}
+
+.nav {
+    width: 100%;
+    background-color: #ce1414;
+
+}
+
+.nav p {
+    /*
+    font-family: arial;
+    */
+    color: #222222;
+    font-size: 24px;
+    line-height: 40px;
+
+}
+
+.nav ul {
+    float: left;
+    width: 50%;
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.nav ul li a {
+    display: block;
+    /*
+    font-family: arial;
+    */
+    color: black;
+    font-size: 14px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 2px; 
+/*  border-radius: 10px; */
+}
+
+.nav ul li:hover ul {
+    display: block;
+    background-color: rgb(177, 228, 245);
+    opacity: 1;
+    width: 140px;
+    border: 10px;
+    border-color: rgb(66, 176, 213);
+}
+
+
+.nav ul li ul li {
+    width: 120px;
+/*    border-radius: 4px; */
+}
+
+.nav ul li ul li a {
+   padding: 8px 14px;
+}
+
+.nav ul li ul li a:hover {
+    background-color: #aaaaaa;
+ }
+ 
+.header {
+    height: 18%;
+    padding: 10px 10px;
+    color: #ffffff;
+    background-color: rgb(66, 176, 213);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 400px;
+}
+
+.logo {
+    color:#000000;
+    text-align: left;
+    padding: 2%;
+}
+
+.image {
+    color:#000000;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.errorlines {
+    color:#000000;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.neo4jsearch-large {
+    padding: 10px;
+    padding-left: 30%;
+    width: 75%;
+}
+.neo4jsearch-link {
+    float: right;
+    padding-right: 35%;
+}
+
+.neo4jsearch {
+    padding: 10px;
+    padding-left: 30%;
+}
+
+.neo4jrecursive {
+    padding: 10px;
+    padding-left: 30%;
+}
+.neo4jrecursive input {
+    width: 50px;
+}
+
+.neo4jsearch-large input {
+    align-items: left;
+    padding: 2px;
+    font-size: 14px;    
+    line-height: 12px;
+    width: 500px;
+}
+
+.link-button {
+    margin: 10px;
+    font: bold 14px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+  }
+
+
+.neo4jsearchbtn-orig {
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.neo4jsearchbtn-orig input {
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.neo4jsearchbtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+.neo4jsearch input {
+    padding: 2px;
+    font-size: 14px;    
+    line-height: 12px;
+    width: 400px;
+}
+
+.hidden {
+    opacity : 0;
+    height: 0px;
+}
+
+.visible input {
+    height: 20px;
+    border: none;
+    font-size: 14px;
+    font-family: sans-serif, Arial;
+
+}
+
+.visible {
+    float:left;
+}
+
+.mqsearch {
+    padding: 10px;
+}
+
+.mqsearch input {
+    padding: 10px;
+    font-size: 12px;    
+    line-height: 10px;
+    width: 500px;
+}
+
+.searchbtn button {
+    width: 70px;
+    padding: 10px;
+    text-align: center;  
+} 
+
+
+.returnedresults {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+    /*
+    font-family: Arial;
+    */
+    font-size: 10px;
+}
+
+.itemcontainer {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+}
+
+.internalitem {
+    padding: 1px;
+    width: 100%;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+}
+
+.link {
+    font-size: 10px; 
+    padding: 2px;
+}
+
+.action {
+    font-size: 16px;
+    padding: 2px;
+    color: royalblue; 
+    font-family: sans-serif, Arial
+}
+
+.content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-family: sans-serif, Arial;
+}
+
+
+.trailer {
+    color:#000000;
+    height: 75px;
+    width: 100%;
+    padding: 10px;
+    font-family: sans-serif, Arial;
+    font-size: small;
+    position: absolute;
+    background-color: gray;
+    bottom: 0;
+    left: 0;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 10px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 10px 10px;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin: 10px;
+  }
+ 
+  .content-inner {
+    padding: 10px 10px;
+    display: none;
+    width: 60%;
+    overflow: hidden;
+    background-color: #a1a1a1;
+    margin: 10px;
+  }
+  
+  .row {
+      float: left;
+      margin: 10 0 0 0;
+      width: 100%;
+  }
+
+  .item {
+      padding: 0 20 0 0;
+      float:none;
+      overflow: hidden;
+  }
+
+  .navigationButtons {
+    border: none 1px black;
+    height: 29px; 
+    width: 100%;
+    padding: 20px 0 0 20%
+  }
+
+  .navigationButtons div button {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+  }
+
+  .page {
+    border: none 1px black;
+    margin: 4% 0 0% 0;
+    width: 50%;
+    padding-left: 31%;
+  }
+
+  .myTable {
+      float: left;
+      margin: 20px 0 0 50px;
+      width: 60%;
+  }
+
+  .loginfrm {
+    border: none 1px black;
+    padding: 10px 10px 0px 10px;
+    width: 500px;
+    margin-left: 60%;
+}
+
+.neo4jlogin {
+    border: none 1px black;
+    padding: 10px 10px 0px 10px;
+    width: 300px;
+    margin-left: 5px;
+}
+.neo4jlogin input {
+    border: solid 1px black;
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.neo4jpassword {
+    border: none 1px black;
+    padding: 10px 10px 0px 10px;
+    width: 300px;
+    margin-left: 5px;
+}
+.neo4jpassword input {
+    border: solid 1px black;
+    padding: 10px;
+    width: 360px;
+    font-size: 16px;
+}
+.neo4jloginbtn {
+    float:left;
+    border: solid 0px black;
+    padding: 0 0px 0 0;
+    width: 150px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.neo4jloginbtn input {
+    border: solid 1px black;
+    padding: 0 0px 0 0;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.neo4jregister {
+    float:left;
+    margin:25px;
+    padding-top: 10px;
+
+}
+.user {
+    float: right;
+    margin: 10px;
+    color: black;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+.title {
+    float: left;
+    width: 90%;
+}
+
+.title-image {
+    float: left;
+    width: 50%;
+}
+
+.selected-store {
+    float:left;
+}
+
+.version {
+    float: right;
+    margin: 10px;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
