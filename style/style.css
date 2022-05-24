@@ -293,9 +293,14 @@ body {
     left: 0;
 }
 
-@media screen {
-    div.modile {display: none}
-    div.desktop {display: block}
+@media screen  {
+    div.mobile {display: none}
+    div.desktop {display: block; height:auto;}
+}
+
+@media screen and (max-width: 375px) {
+    div.mobile {display: block; height: auto;}
+    div.desktop {display: none}
 }
 
 
