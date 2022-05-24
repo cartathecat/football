@@ -293,7 +293,7 @@ body {
     left: 0;
 }
 
-@media screen  {
+@media screen  and (max-width: 1024px) {
     div.mobile {display: none}
     div.desktop {display: block; height:auto;}
 }
