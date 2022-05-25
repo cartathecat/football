@@ -293,10 +293,12 @@ body {
     left: 0;
 }
 
-@media screen  and (max-width: 1024px) {
+
+@media screen  and (max-width: 1440px) {
     div.mobile {display: none}
     div.desktop {display: block; height:auto;}
 }
+
 
 @media screen and (max-width: 375px) {
     div.mobile {display: block; height: auto;}
